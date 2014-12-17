@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *ToggleSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *voiceRecognitionSwitch;
 - (IBAction)voiceRecognitionChanged:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *Status;
 
 @end
 

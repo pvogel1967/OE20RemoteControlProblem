@@ -17,10 +17,10 @@
 
 @implementation ViewController {
     OELanguageModelGenerator *lmg;
-    AVSpeechSynthesizer *synth;
 }
 @synthesize openEarsEventsObserver;
 @synthesize player;
+@synthesize Status;
 
 - (OEEventsObserver *)openEarsEventsObserver {
     if (openEarsEventsObserver == nil) {
@@ -29,17 +29,6 @@
     return openEarsEventsObserver;
 }
 
-- (OEPocketsphinxController *)pocketsphinxController {
-    if (_pocketsphinxController == nil) {
-        _pocketsphinxController = [OEPocketsphinxController sharedInstance];
-        [_pocketsphinxController setActive:true error:nil];
-    }
-    
-    
-    return _pocketsphinxController;
-}
-
-
 - (BOOL) canBecomeFirstResponder
 {
     return YES;
@@ -47,22 +36,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    synth = [[AVSpeechSynthesizer alloc] init];
     [self.openEarsEventsObserver setDelegate:self];
     [[AVAudioSession sharedInstance] setMode:AVAudioSessionModeVideoChat error:nil];
     NSURL *intro = [[NSBundle mainBundle] URLForResource:@"RCCallerIntro" withExtension:@"mp3"];
     player = [[AVPlayer alloc] initWithURL:intro];
     
-    /*  Kicking off playback takes over
-     *  the software based remote control
-     *  interface in the lock screen and
-     *  in Control Center.
-     */
-    
+    /*  Kicking off playback lets us start receiving remote control events     */
     [player play];
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    [self resignFirstResponder];
-    [self becomeFirstResponder];
 
 }
 
@@ -94,32 +75,11 @@
     } else {
         dicPath = [lmg pathToSuccessfullyGeneratedDictionaryWithRequestedName:name];
         lmPath = [lmg pathToSuccessfullyGeneratedLanguageModelWithRequestedName:name];
-        [self.pocketsphinxController verbosePocketSphinx];
     }
-    NSLog(@"startListening lmPath=%@, dicPath=%@, amPath=%@", lmPath,dicPath,[OEAcousticModel pathToModel:@"AcousticModelEnglish"]);
-    [self.pocketsphinxController startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
-    [self speak:@"Listening for voice commands, you can say: START CALLING, NEXT, PREVIOUS, REPEAT THAT, or STOP CALLING"];
+    [[OEPocketsphinxController sharedInstance] startListeningWithLanguageModelAtPath:lmPath dictionaryAtPath:dicPath acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO];
     NSLog(@"Started listening");
+    Status.text = @"Started listening";
 }
-
--(void)speak:(NSString *)toSpeak
-{
-    [self speak:toSpeak withVoice:[AVSpeechSynthesisVoice voiceWithLanguage:@"en-US"]];
-}
-
--(void)speak:(NSString *)toSpeak withVoice:(AVSpeechSynthesisVoice *)voice
-{
-    AVSpeechUtterance *utterance;
-    if ([toSpeak characterAtIndex:0] == '0') {
-        utterance = [AVSpeechUtterance speechUtteranceWithString:[toSpeak substringFromIndex:1]];
-    } else {
-        utterance = [AVSpeechUtterance speechUtteranceWithString:toSpeak];
-    }
-    utterance.voice = (voice == nil) ? [AVSpeechSynthesisVoice voiceWithLanguage:[AVSpeechSynthesisVoice currentLanguageCode]] : voice;
-    utterance.rate = 0.25 * AVSpeechUtteranceDefaultSpeechRate;
-    [synth speakUtterance:utterance];
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -130,7 +90,8 @@
     if ([self.voiceRecognitionSwitch isOn]) {
         [self initRecognizer];
     } else {
-        [self.pocketsphinxController stopListening];
+        [[OEPocketsphinxController sharedInstance] stopListening];
+        Status.text = @"stopped listening";
     }
 }
 
@@ -138,9 +99,8 @@
                          recognitionScore:		(NSString *) 	recognitionScore
                               utteranceID:		(NSString *) 	utteranceID
 {
-    [self becomeFirstResponder];
-    int score = recognitionScore.intValue;
     NSLog(@"Word: %@, Recognition score: %@, utteranceID: %@", hypothesis, recognitionScore, utteranceID);
+    Status.text = hypothesis;
 }
 
 - (void) audioSessionInterruptionDidBegin {
