@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0402A671A3FD46300B40C65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0402A661A3FD46300B40C65 /* UIKit.framework */; };
+		C0C4AA411A3FC4BF000DA68D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C4AA401A3FC4BF000DA68D /* main.m */; };
+		C0C4AA441A3FC4BF000DA68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C4AA431A3FC4BF000DA68D /* AppDelegate.m */; };
+		C0C4AA471A3FC4BF000DA68D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C4AA461A3FC4BF000DA68D /* ViewController.m */; };
+		C0C4AA4A1A3FC4BF000DA68D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C4AA481A3FC4BF000DA68D /* Main.storyboard */; };
+		C0C4AA4C1A3FC4BF000DA68D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C4AA4B1A3FC4BF000DA68D /* Images.xcassets */; };
+		C0C4AA4F1A3FC4BF000DA68D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C4AA4D1A3FC4BF000DA68D /* LaunchScreen.xib */; };
+		C0C4AA5B1A3FC4BF000DA68D /* OE20RemoteProblemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C4AA5A1A3FC4BF000DA68D /* OE20RemoteProblemTests.m */; };
+		C0C4AA691A3FC517000DA68D /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0C4AA651A3FC517000DA68D /* AcousticModelEnglish.bundle */; };
+		C0C4AA6A1A3FC517000DA68D /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0C4AA661A3FC517000DA68D /* AcousticModelSpanish.bundle */; };
+		C0C4AA6B1A3FC517000DA68D /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C4AA671A3FC517000DA68D /* OpenEars.framework */; };
+		C0C4AA6C1A3FC517000DA68D /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C4AA681A3FC517000DA68D /* Slt.framework */; };
+		C0C4AA6E1A3FC523000DA68D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C4AA6D1A3FC523000DA68D /* AVFoundation.framework */; };
+		C0C4AA701A3FC7CC000DA68D /* RCCallerIntro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0C4AA6F1A3FC7CC000DA68D /* RCCallerIntro.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0C4AA551A3FC4BF000DA68D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C4AA331A3FC4BF000DA68D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0C4AA3A1A3FC4BF000DA68D;
+			remoteInfo = OE20RemoteProblem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0402A661A3FD46300B40C65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0C4AA3B1A3FC4BF000DA68D /* OE20RemoteProblem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OE20RemoteProblem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C4AA3F1A3FC4BF000DA68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C4AA401A3FC4BF000DA68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0C4AA421A3FC4BF000DA68D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0C4AA431A3FC4BF000DA68D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0C4AA451A3FC4BF000DA68D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0C4AA461A3FC4BF000DA68D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C0C4AA491A3FC4BF000DA68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0C4AA4B1A3FC4BF000DA68D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C0C4AA4E1A3FC4BF000DA68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C0C4AA541A3FC4BF000DA68D /* OE20RemoteProblemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OE20RemoteProblemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C4AA591A3FC4BF000DA68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C4AA5A1A3FC4BF000DA68D /* OE20RemoteProblemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OE20RemoteProblemTests.m; sourceTree = "<group>"; };
+		C0C4AA651A3FC517000DA68D /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		C0C4AA661A3FC517000DA68D /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		C0C4AA671A3FC517000DA68D /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		C0C4AA681A3FC517000DA68D /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		C0C4AA6D1A3FC523000DA68D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C0C4AA6F1A3FC7CC000DA68D /* RCCallerIntro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RCCallerIntro.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0C4AA381A3FC4BF000DA68D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0402A671A3FD46300B40C65 /* UIKit.framework in Frameworks */,
+				C0C4AA6E1A3FC523000DA68D /* AVFoundation.framework in Frameworks */,
+				C0C4AA6C1A3FC517000DA68D /* Slt.framework in Frameworks */,
+				C0C4AA6B1A3FC517000DA68D /* OpenEars.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C4AA511A3FC4BF000DA68D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0C4AA321A3FC4BF000DA68D = {
+			isa = PBXGroup;
+			children = (
+				C0402A661A3FD46300B40C65 /* UIKit.framework */,
+				C0C4AA6D1A3FC523000DA68D /* AVFoundation.framework */,
+				C0C4AA641A3FC517000DA68D /* Framework */,
+				C0C4AA3D1A3FC4BF000DA68D /* OE20RemoteProblem */,
+				C0C4AA571A3FC4BF000DA68D /* OE20RemoteProblemTests */,
+				C0C4AA3C1A3FC4BF000DA68D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0C4AA3C1A3FC4BF000DA68D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0C4AA3B1A3FC4BF000DA68D /* OE20RemoteProblem.app */,
+				C0C4AA541A3FC4BF000DA68D /* OE20RemoteProblemTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0C4AA3D1A3FC4BF000DA68D /* OE20RemoteProblem */ = {
+			isa = PBXGroup;
+			children = (
+				C0C4AA6F1A3FC7CC000DA68D /* RCCallerIntro.mp3 */,
+				C0C4AA421A3FC4BF000DA68D /* AppDelegate.h */,
+				C0C4AA431A3FC4BF000DA68D /* AppDelegate.m */,
+				C0C4AA451A3FC4BF000DA68D /* ViewController.h */,
+				C0C4AA461A3FC4BF000DA68D /* ViewController.m */,
+				C0C4AA481A3FC4BF000DA68D /* Main.storyboard */,
+				C0C4AA4B1A3FC4BF000DA68D /* Images.xcassets */,
+				C0C4AA4D1A3FC4BF000DA68D /* LaunchScreen.xib */,
+				C0C4AA3E1A3FC4BF000DA68D /* Supporting Files */,
+			);
+			path = OE20RemoteProblem;
+			sourceTree = "<group>";
+		};
+		C0C4AA3E1A3FC4BF000DA68D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0C4AA3F1A3FC4BF000DA68D /* Info.plist */,
+				C0C4AA401A3FC4BF000DA68D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0C4AA571A3FC4BF000DA68D /* OE20RemoteProblemTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0C4AA5A1A3FC4BF000DA68D /* OE20RemoteProblemTests.m */,
+				C0C4AA581A3FC4BF000DA68D /* Supporting Files */,
+			);
+			path = OE20RemoteProblemTests;
+			sourceTree = "<group>";
+		};
+		C0C4AA581A3FC4BF000DA68D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0C4AA591A3FC4BF000DA68D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0C4AA641A3FC517000DA68D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C0C4AA651A3FC517000DA68D /* AcousticModelEnglish.bundle */,
+				C0C4AA661A3FC517000DA68D /* AcousticModelSpanish.bundle */,
+				C0C4AA671A3FC517000DA68D /* OpenEars.framework */,
+				C0C4AA681A3FC517000DA68D /* Slt.framework */,
+			);
+			name = Framework;
+			path = OE20RemoteProblem/Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0C4AA3A1A3FC4BF000DA68D /* OE20RemoteProblem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C4AA5E1A3FC4BF000DA68D /* Build configuration list for PBXNativeTarget "OE20RemoteProblem" */;
+			buildPhases = (
+				C0C4AA371A3FC4BF000DA68D /* Sources */,
+				C0C4AA381A3FC4BF000DA68D /* Frameworks */,
+				C0C4AA391A3FC4BF000DA68D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OE20RemoteProblem;
+			productName = OE20RemoteProblem;
+			productReference = C0C4AA3B1A3FC4BF000DA68D /* OE20RemoteProblem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0C4AA531A3FC4BF000DA68D /* OE20RemoteProblemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C4AA611A3FC4C0000DA68D /* Build configuration list for PBXNativeTarget "OE20RemoteProblemTests" */;
+			buildPhases = (
+				C0C4AA501A3FC4BF000DA68D /* Sources */,
+				C0C4AA511A3FC4BF000DA68D /* Frameworks */,
+				C0C4AA521A3FC4BF000DA68D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0C4AA561A3FC4BF000DA68D /* PBXTargetDependency */,
+			);
+			name = OE20RemoteProblemTests;
+			productName = OE20RemoteProblemTests;
+			productReference = C0C4AA541A3FC4BF000DA68D /* OE20RemoteProblemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0C4AA331A3FC4BF000DA68D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Vogel, Peter";
+				TargetAttributes = {
+					C0C4AA3A1A3FC4BF000DA68D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C0C4AA531A3FC4BF000DA68D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C0C4AA3A1A3FC4BF000DA68D;
+					};
+				};
+			};
+			buildConfigurationList = C0C4AA361A3FC4BF000DA68D /* Build configuration list for PBXProject "OE20RemoteProblem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0C4AA321A3FC4BF000DA68D;
+			productRefGroup = C0C4AA3C1A3FC4BF000DA68D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0C4AA3A1A3FC4BF000DA68D /* OE20RemoteProblem */,
+				C0C4AA531A3FC4BF000DA68D /* OE20RemoteProblemTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0C4AA391A3FC4BF000DA68D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C4AA4A1A3FC4BF000DA68D /* Main.storyboard in Resources */,
+				C0C4AA6A1A3FC517000DA68D /* AcousticModelSpanish.bundle in Resources */,
+				C0C4AA691A3FC517000DA68D /* AcousticModelEnglish.bundle in Resources */,
+				C0C4AA701A3FC7CC000DA68D /* RCCallerIntro.mp3 in Resources */,
+				C0C4AA4F1A3FC4BF000DA68D /* LaunchScreen.xib in Resources */,
+				C0C4AA4C1A3FC4BF000DA68D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C4AA521A3FC4BF000DA68D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0C4AA371A3FC4BF000DA68D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C4AA471A3FC4BF000DA68D /* ViewController.m in Sources */,
+				C0C4AA441A3FC4BF000DA68D /* AppDelegate.m in Sources */,
+				C0C4AA411A3FC4BF000DA68D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C4AA501A3FC4BF000DA68D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C4AA5B1A3FC4BF000DA68D /* OE20RemoteProblemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0C4AA561A3FC4BF000DA68D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0C4AA3A1A3FC4BF000DA68D /* OE20RemoteProblem */;
+			targetProxy = C0C4AA551A3FC4BF000DA68D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0C4AA481A3FC4BF000DA68D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0C4AA491A3FC4BF000DA68D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0C4AA4D1A3FC4BF000DA68D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0C4AA4E1A3FC4BF000DA68D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0C4AA5C1A3FC4BF000DA68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0C4AA5D1A3FC4BF000DA68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0C4AA5F1A3FC4BF000DA68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OE20RemoteProblem/Framework",
+				);
+				INFOPLIST_FILE = OE20RemoteProblem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0C4AA601A3FC4BF000DA68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OE20RemoteProblem/Framework",
+				);
+				INFOPLIST_FILE = OE20RemoteProblem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C0C4AA621A3FC4C0000DA68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OE20RemoteProblemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OE20RemoteProblem.app/OE20RemoteProblem";
+			};
+			name = Debug;
+		};
+		C0C4AA631A3FC4C0000DA68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OE20RemoteProblemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OE20RemoteProblem.app/OE20RemoteProblem";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0C4AA361A3FC4BF000DA68D /* Build configuration list for PBXProject "OE20RemoteProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C4AA5C1A3FC4BF000DA68D /* Debug */,
+				C0C4AA5D1A3FC4BF000DA68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C4AA5E1A3FC4BF000DA68D /* Build configuration list for PBXNativeTarget "OE20RemoteProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C4AA5F1A3FC4BF000DA68D /* Debug */,
+				C0C4AA601A3FC4BF000DA68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C4AA611A3FC4C0000DA68D /* Build configuration list for PBXNativeTarget "OE20RemoteProblemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C4AA621A3FC4C0000DA68D /* Debug */,
+				C0C4AA631A3FC4C0000DA68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0C4AA331A3FC4BF000DA68D /* Project object */;
+}
