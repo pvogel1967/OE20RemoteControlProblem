@@ -22,12 +22,6 @@
 @synthesize player;
 @synthesize Status;
 
-- (OEEventsObserver *)openEarsEventsObserver {
-    if (openEarsEventsObserver == nil) {
-        openEarsEventsObserver = [[OEEventsObserver alloc] init];
-    }
-    return openEarsEventsObserver;
-}
 
 - (BOOL) canBecomeFirstResponder
 {
@@ -36,8 +30,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.openEarsEventsObserver setDelegate:self];
-    [[AVAudioSession sharedInstance] setMode:AVAudioSessionModeVideoChat error:nil];
+    if (openEarsEventsObserver == nil) {
+        openEarsEventsObserver = [[OEEventsObserver alloc] init];
+    }
+    [openEarsEventsObserver setDelegate:self];
     NSURL *intro = [[NSBundle mainBundle] URLForResource:@"RCCallerIntro" withExtension:@"mp3"];
     player = [[AVPlayer alloc] initWithURL:intro];
     
